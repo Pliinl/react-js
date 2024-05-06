@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        Biến, KDL, Toán tử
+        Điều kiện
+        Vòng lặp
+        Mảng 
+        Hàm
+        OOP
+     -->
+    <script>
+        // các cách tạo biến: var, let, const.
+        // có các KDL nào? number, boolean, undefined, objeck, symbol.
+        // +, -, *, /, %.
+        // +=, -+, *=, /=, %=.
+        // ++, --
+        // >, <, >=, <=, !=, ===, !==.
+        // &&, ||, !;.
+        // số + chuỗi = Chuỗi
+        // số -, *, /, % chuỗi = số
+        // từ trái sang phải, *, / trước +, - sau, ưu tiên ( ).
+        // thực hiện từng bước từng phép
+        console.log(3 + '5' + 2); // => '35' + 2 = '352'
+        console.log('3' + 5 + 2); // => '35' + 2 = "352"
+        console.log('3 -5+2') // => -2 +2
+        // Điều kiện: các loại câu điều kiện trong JS ( if, else, else if, switch case break, ? :)
+        if(true) {
+            alert('x')
+        } else if (true) {
+
+        }
+
+        let x = 10 > 15 ? 1000 : 50;
+        if(10>15) {
+            x = 1000
+        } else {
+            x =50
+        }
+
+        // Vòng lặp: các loại câu lệnh vòng lặp trong JS ( for, forof, forin, while, do - while)
+        for(let i = 0; i < 10; i++) {
+
+            }
+
+        while() {
+            
+        }
+
+        do {
+        
+        } while
+
+        // Mảng: khai báo, truy xuất, duyệt, các hàm.
+        let abc = [12, 34, 56, 54, 32, 21];
+        for(let i = 0; i < abc.length; i++) {
+            console.log(abc[i]);
+        }
+        abc.push(15); // thêm 15 vào cuối abc
+        abc.splice(1, 2); // tại vị trí 1, xóa đi phần tử
+        abc.indexOf(54); //3
+        abc.indexOf(11); //-1
+
+        // hàm: là 1 biến chứa code bên trong
+        // khi nào dùng hàm thì code mới chạy
+        function ten(x, y, z) {
+              return a // đầu ra
+        }
+      
+        function x() {
+            document.write('Hello');
+        }
+        x()
+        // biến toàn cục: không nằm trong bất kỳ cặp {} nào
+        // biến cục bộ: nằm trong bất kỳ cặp {} nào
+        let x = 10;
+        if (true) {
+            let y = 11;
+            alert(x)
+            if (true) {
+                alert(y);
+            }
+        }
+        alert(y)
+        function xxx() {
+            if (true) {
+                var z = 100;
+                let t = 100;
+            }
+            alert(z); // 100
+            alert(t); // lỗi
+        }
+
+         // tham trị , tham chiếu
+
+        //  OOP
+        class A {
+            constructor() {
+
+            }
+        }
+        let o= {
+            
+        }
+    </script>
+</body>
+
+</html>
