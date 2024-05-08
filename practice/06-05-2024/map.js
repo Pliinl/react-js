@@ -7,6 +7,15 @@ arr.map((x, y) => {
     console.log(x + ' tai vi tri '+y)
 })
 
-// dùng mapp, in ra các phần tử chăn trong mảng
-
+// Dùng map, in ra các phần tử chẵn trong mảng
+arr.map(x => {
+    if ( x%2 == 0 ){
+        console.log(x)
+    }
+})
 // Dùng map, tính tích các phần tử trong mảng
+let t = 1;
+arr.map(x =>{
+    t *= x;
+})
+console.log(t);
